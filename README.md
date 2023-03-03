@@ -21,14 +21,7 @@ El objetivo de esta práctica es hacer un portfolio utilizando todo lo aprendido
 
 ## Vista previa del proyecto
 
-Puedes echarle un vistazo a los bocetos que he diseñado en Figma. </br>
-Aquí la versión escritorio:
-
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT6Y49ROlMh82nwp8fsWIPD%2FPortfolio%3Fpage-id%3D2%253A10%26node-id%3D65%253A390%26viewport%3D-2218%252C249%252C0.13%26scaling%3Dscale-down%26starting-point-node-id%3D65%253A390%26show-proto-sidebar%3D1" allowfullscreen></iframe>
-
-Y aquí la versión móvil:
-
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FT6Y49ROlMh82nwp8fsWIPD%2FPortfolio%3Fpage-id%3D2%253A10%26node-id%3D79%253A23%26viewport%3D-2218%252C249%252C0.13%26scaling%3Dmin-zoom%26starting-point-node-id%3D79%253A23%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+Puedes echarle un vistazo a los bocetos que he diseñado en Figma con [la versión escritorio](https://www.figma.com/proto/T6Y49ROlMh82nwp8fsWIPD/Portfolio?page-id=2%3A10&node-id=65%3A390&viewport=-2279%2C47%2C0.13&scaling=scale-down&starting-point-node-id=65%3A390&show-proto-sidebar=1) y la [versión móvil](https://www.figma.com/proto/T6Y49ROlMh82nwp8fsWIPD/Portfolio?page-id=2%3A10&node-id=79%3A23&viewport=-2218%2C249%2C0.13&scaling=min-zoom&starting-point-node-id=79%3A23&show-proto-sidebar=1).
 
 ## Autor ✒️
 
