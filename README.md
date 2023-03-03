@@ -9,7 +9,7 @@ El objetivo de esta práctica es hacer un portfolio utilizando todo lo aprendido
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
-...
+Las ilustraciones están creadas con el repositorio de [https://designstripe.com/](https://designstripe.com/).
 
 ## Tecnologías 🛠
 
