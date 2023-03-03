@@ -1,0 +1,37 @@
+:root {
+  /* fonts */
+  --body-font: sans-serif;
+  --titles-font: sans-serif;
+
+  /* --------------------------------------------- */
+
+  /* colors */
+
+  /* --------------------------------------------- */
+
+  /* colors applied */
+  /* txt colors */
+  --txt-color: black;
+
+  /* bg colors */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  background-color: hsl(201, 11%, 66%);
+}
+
+body {
+  position: relative;
+
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: var(--body-font);
+  color: var(--txt-color);
+}
