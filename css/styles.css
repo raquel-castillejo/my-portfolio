@@ -1,19 +1,25 @@
 :root {
   /* fonts */
-  --body-font: sans-serif;
-  --titles-font: sans-serif;
+  --body-font: 'Bitter', serif;
+  --titles-font: 'Bitter', serif;
+  --accent-text-font: 'Indie Flower', cursive;
 
   /* --------------------------------------------- */
 
   /* colors */
+  --light-blue: hsl(194, 100%, 95%);
+  --medium-blue: hsl(183, 100%, 36%);
+  --strong--blue: hsl(194, 100%, 33%);
 
   /* --------------------------------------------- */
 
   /* colors applied */
   /* txt colors */
-  --txt-color: black;
+  --txt-color-black: black;
+  --txt-color-white: white;
 
   /* bg colors */
+  --bg-header: var(--light-blue);
 }
 
 * {
@@ -21,17 +27,70 @@
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
   background-color: hsl(201, 11%, 66%);
 }
 
 body {
-  position: relative;
-
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 
   font-family: var(--body-font);
-  color: var(--txt-color);
+  color: var(--txt-color-black);
+  background-color: #fff;
+}
+
+a {
+  /* reset */
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  /* reset */
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+/* HEADER */
+/* ****** */
+
+.header {
+  position: relative;
+
+  height: 100vh;
+  border-bottom: 2px solid var(--medium-blue);
+
+  /* para dar la ilusión de marco */
+  background-image: linear-gradient(
+      #fff 10px,
+      transparent 10px calc(100vh - 10px),
+      #fff calc(100vh - 10px)
+    ),
+    linear-gradient(
+      to right,
+      #fff 10px,
+      var(--bg-header) 10px calc(100vw - 10px),
+      #fff calc(100vw - 10px)
+    );
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+  gap: 20px;
 }

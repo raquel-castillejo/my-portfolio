@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS STYLES -->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -14,7 +20,46 @@
     <title>rcm portfolio</title>
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header-top">
+        <p class="logo">rcm</p>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="" class="menu__link">mis trabajos</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="" class="menu__link">sobre mí</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__texts">
+        <p class="header__pretitle">¡hola!</p>
+        <p class="header__title">
+          Soy
+          <span class="header__title--colored-text">Raquel,</span> diseñadora
+          gráfica
+        </p>
+      </div>
+
+      <picture>
+        <source
+          media="(min-width:900px)"
+          srcset="assets/images/desktop/banner.png"
+        />
+        <source
+          media="(min-width:300px)"
+          srcset="assets/images/mobile/banner.png"
+        />
+        <img
+          src="assets/images/mobile/banner.png"
+          alt="Ilustración de una chica utilizando aplicaciones de un ordenador"
+          class="header__img"
+        />
+      </picture>
+    </header>
 
     <main class="main"></main>
 
