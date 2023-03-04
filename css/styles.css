@@ -66,7 +66,7 @@ img {
   position: relative;
 
   height: 100vh;
-  border-bottom: 2px solid var(--medium-blue);
+  padding: 20px;
 
   /* para dar la ilusión de marco */
   background-image: linear-gradient(
@@ -80,6 +80,7 @@ img {
       var(--bg-header) 10px calc(100vw - 10px),
       #fff calc(100vw - 10px)
     );
+  border-bottom: 2px solid var(--medium-blue);
 }
 
 .header-top {
@@ -88,9 +89,35 @@ img {
 
   align-items: center;
   justify-content: space-between;
+
+  margin-top: 10px;
 }
 
 .menu__list {
   display: flex;
   gap: 20px;
+}
+
+.logo {
+  margin: 0;
+}
+
+.header__img {
+  /*  📌 aumentar el tamaño de la imagen jpg. 
+      📌 a 400 px de alto al menos */
+  height: 400px;
+
+  position: absolute;
+  left: -20px;
+}
+
+.header__texts {
+  position: absolute;
+  width: calc(100% - 40px);
+  bottom: 0;
+}
+
+.header__pretitle,
+.header__title {
+  width: 100%;
 }
