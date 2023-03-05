@@ -7,9 +7,14 @@
   /* --------------------------------------------- */
 
   /* colors */
+  /* main colors */
   --light-blue: hsl(194, 100%, 95%);
   --medium-blue: hsl(183, 100%, 36%);
   --strong--blue: hsl(194, 100%, 33%);
+
+  /* creciendo en la diversidad */
+  --bg-color-creciendo-en-la-diversidad: #cf3b5c;
+  --txt-color-creciendo-en-la-diversidad: #fff;
 
   /* --------------------------------------------- */
 
@@ -57,6 +62,11 @@ ul {
 
 img {
   display: block;
+}
+
+.section-title {
+  text-transform: lowercase;
+  font-size: 20px;
 }
 
 /* HEADER */
@@ -124,8 +134,28 @@ img {
   width: 100%;
 }
 
+.header__pretitle {
+  font-family: var(--accent-text-font);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.header__title {
+  margin-top: 0;
+}
+
+.header__title--colored-text {
+  color: var(--medium-blue);
+}
+
+/* MIS TRABAJOS */
+.mis-trabajos {
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
 /* POSTERS */
-.poster-hover {
+.poster--hover {
   display: block;
   width: 100%;
 
@@ -138,6 +168,13 @@ img {
 
 .creciendo-en-la-diversidad {
   position: relative;
+  background-color: var(--bg-color-creciendo-en-la-diversidad);
+  color: var(--txt-color-creciendo-en-la-diversidad);
+
+  width: calc(100% + 20px);
+  left: -10px;
+
+  padding: 10px;
 }
 
 .creciendo-en-la-diversidad__poster,
@@ -156,13 +193,11 @@ img {
 
   /* ¿ no me funciona margin-left:auto; margin-right:auto; ? */
   margin: 0 auto;
-
-  border: 1px solid magenta;
   border-radius: 5px;
 
   padding: 10px;
-  background-color: white;
-  color: magenta;
+  background-color: var(--txt-color-creciendo-en-la-diversidad);
+  color: var(--bg-color-creciendo-en-la-diversidad);
 }
 
 /* ABOUT ME */
@@ -170,29 +205,31 @@ img {
 .about-me {
   position: relative;
   overflow: hidden;
-
-  height: 100vh;
   padding: 20px;
 
   /* para dar la ilusión de marco */
-  background-image: linear-gradient(
-      #fff 10px,
-      transparent 10px calc(100vh - 10px),
-      #fff calc(100vh - 10px)
-    ),
+  background-image: linear-gradient(#fff 10px, transparent 10px),
+    linear-gradient(to top, #fff 10px, transparent 10px),
     linear-gradient(
       to right,
       #fff 10px,
       var(--bg-header) 10px calc(100vw - 10px),
       #fff calc(100vw - 10px)
     );
-  border-bottom: 2px solid var(--medium-blue);
+  border-top: 1px solid var(--medium-blue);
 }
 
 .about-me__img {
   height: 400px;
 
-  position: absolute;
-  left: -20px;
-  bottom: 150px;
+  position: relative;
+  left: -30px;
+  top: 20px;
+}
+
+.about-me__contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
