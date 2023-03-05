@@ -124,9 +124,75 @@ img {
   width: 100%;
 }
 
+/* POSTERS */
+.poster-hover {
+  display: block;
+  width: 100%;
+
+  background-color: aqua;
+
+  text-align: center;
+}
+
 /* CRECIENDO EN LA DIVERSIDAD */
 
+.creciendo-en-la-diversidad {
+  position: relative;
+}
+
 .creciendo-en-la-diversidad__poster,
-.creciendo-en-la-diversidad__img {
+.creciendo-en-la-diversidad__img,
+.zaldiko__poster,
+.infografia__poster,
+.invitaciones__poster {
   width: 100%;
+  margin-bottom: 10px;
+}
+
+.button--close-project {
+  display: block;
+  width: 15rem;
+  text-align: center;
+
+  /* ¿ no me funciona margin-left:auto; margin-right:auto; ? */
+  margin: 0 auto;
+
+  border: 1px solid magenta;
+  border-radius: 5px;
+
+  padding: 10px;
+  background-color: white;
+  color: magenta;
+}
+
+/* ABOUT ME */
+
+.about-me {
+  position: relative;
+  overflow: hidden;
+
+  height: 100vh;
+  padding: 20px;
+
+  /* para dar la ilusión de marco */
+  background-image: linear-gradient(
+      #fff 10px,
+      transparent 10px calc(100vh - 10px),
+      #fff calc(100vh - 10px)
+    ),
+    linear-gradient(
+      to right,
+      #fff 10px,
+      var(--bg-header) 10px calc(100vw - 10px),
+      #fff calc(100vw - 10px)
+    );
+  border-bottom: 2px solid var(--medium-blue);
+}
+
+.about-me__img {
+  height: 400px;
+
+  position: absolute;
+  left: -20px;
+  bottom: 150px;
 }
