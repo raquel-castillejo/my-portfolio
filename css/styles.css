@@ -69,6 +69,9 @@ img {
   font-size: 20px;
 }
 
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
 /* HEADER */
 /* ****** */
 
@@ -78,6 +81,7 @@ img {
 
   height: 100vh;
   padding: 20px;
+  margin-bottom: 40px;
 
   /* para dar la ilusión de marco */
   background-image: linear-gradient(
@@ -148,40 +152,77 @@ img {
   color: var(--medium-blue);
 }
 
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
 /* MIS TRABAJOS */
-.mis-trabajos {
+/* ************ */
+
+.my-work {
   margin-bottom: 50px;
   padding: 10px;
 }
 
-/* POSTERS */
-.poster--hover {
-  display: block;
+.section-title__my-work {
+  margin-left: 10px;
+}
+
+.project-poster {
+  position: relative;
+}
+
+.project-poster--hover {
+  display: none;
+}
+
+.project-poster__poster-img {
   width: 100%;
+  margin-bottom: 10px;
+}
 
-  background-color: aqua;
-
+/*
+.project-poster--hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
+*/
 
-/* CRECIENDO EN LA DIVERSIDAD */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
 
-.creciendo-en-la-diversidad {
-  position: relative;
-  background-color: var(--bg-color-creciendo-en-la-diversidad);
-  color: var(--txt-color-creciendo-en-la-diversidad);
+/* DEFINICIÓN DE LOS PROYECTOS */
 
-  width: calc(100% + 20px);
-  left: -10px;
-
-  padding: 10px;
+.project {
+  margin-bottom: 50px;
 }
 
-.creciendo-en-la-diversidad__poster,
-.creciendo-en-la-diversidad__img,
-.zaldiko__poster,
-.infografia__poster,
-.invitaciones__poster {
+.project-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.project-header__title,
+.project-header__project-type {
+  margin: 0;
+}
+
+.project-description__credits {
+  opacity: 0.6;
+}
+
+.project-description {
+  margin-bottom: 20px;
+}
+
+.project-description__img {
   width: 100%;
   margin-bottom: 10px;
 }
@@ -195,10 +236,30 @@ img {
   margin: 0 auto;
   border-radius: 5px;
 
+  margin-top: 30px;
   padding: 10px;
   background-color: var(--txt-color-creciendo-en-la-diversidad);
   color: var(--bg-color-creciendo-en-la-diversidad);
 }
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
+/* CRECIENDO EN LA DIVERSIDAD */
+
+.project--diversidad {
+  position: relative;
+  background-color: var(--bg-color-creciendo-en-la-diversidad);
+  color: var(--txt-color-creciendo-en-la-diversidad);
+
+  width: calc(100% + 20px);
+  left: -10px;
+
+  padding: 10px;
+}
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
 
 /* ABOUT ME */
 
@@ -225,6 +286,10 @@ img {
   position: relative;
   left: -30px;
   top: 20px;
+}
+
+.about-me__txt {
+  margin-bottom: 50px;
 }
 
 .about-me__contact-links {
