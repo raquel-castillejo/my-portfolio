@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Indie+Flower&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Indie+Flower&display=swap"
       rel="stylesheet"
     />
 
@@ -26,10 +26,10 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a href="" class="menu__link">mis trabajos</a>
+              <a href="#my-work" class="menu__link">mis trabajos</a>
             </li>
             <li class="menu__list-item">
-              <a href="" class="menu__link">sobre mí</a>
+              <a href="#about-me" class="menu__link">sobre mí</a>
             </li>
           </ul>
         </nav>
@@ -62,17 +62,11 @@
     </header>
 
     <main class="main">
-      <section class="my-work">
+      <section class="my-work" id="my-work">
         <h2 class="section-title section-title__my-work">Mis trabajos</h2>
 
         <section class="project project--diversidad">
-          <div class="project-header">
-            <h3 class="project-header__title">Creciendo en la diversidad</h3>
-            <p class="project-header__project-type">
-              identidad gráfica - editorial - web
-            </p>
-          </div>
-          <div class="project-poster">
+          <div class="project-poster" id="diversidad-poster">
             <div class="project-poster--hover">
               <p class="project-poster__title">Creciendo en la diversidad</p>
               <p class="project-poster__project-type">
@@ -96,10 +90,57 @@
                 src="assets/images/mobile/creciendo-en-la-diversidad-portada.jpg"
                 alt="MockUp del proyecto Creciendo en la diversidad. Cuaderno del profesorado cerrado."
                 class="project-poster__poster-img"
+                id="diversidad"
               />
             </picture>
           </div>
-          <div class="project-description">
+
+          <div
+            class="project-description project-description--diversidad hide"
+            id="diversidad-description"
+          >
+            <div class="project-header">
+              <h3 class="project-header__title">Creciendo en la diversidad</h3>
+              <p class="project-header__project-type">
+                identidad gráfica - editorial - web
+              </p>
+
+              <picture>
+                <source
+                  media="(min-width:900px)"
+                  srcset="
+                    assets/images/desktop/creciendo-en-la-diversidad-portada.jpg
+                  "
+                />
+                <source
+                  media="(min-width:300px)"
+                  srcset="
+                    assets/images/mobile/creciendo-en-la-diversidad-portada.jpg
+                  "
+                />
+                <img
+                  src="assets/images/mobile/creciendo-en-la-diversidad-portada.jpg"
+                  alt="MockUp del proyecto Creciendo en la diversidad. Cuaderno del profesorado cerrado."
+                  class="project-header__img"
+                />
+              </picture>
+            </div>
+
+            <p class="project-description__txt">
+              Creación y aplicación de un lenguaje gráfico para la enseñanza
+              afectivo-sexual del alumnado con necesidades educativas
+              especiales.
+            </p>
+            <p class="project-description__credits">
+              Colaboración con la Asociación Sexualidad y Discapacidad. Más
+              tarde este proyecto se convertió en el programa
+              <a
+                class="link link--white"
+                href="https://www3.gobiernodecanarias.org/noticias/un-total-de-347-docentes-se-forma-en-el-marco-del-programa-needucasex/"
+                title="Leer más sobre el programa educativo NEEducaSEX"
+                >NEEducaSEX</a
+              >, impulsado por el Gobierno de Canarias.
+            </p>
             <picture>
               <source
                 media="(min-width:900px)"
@@ -119,21 +160,6 @@
                 class="project-description__img"
               />
             </picture>
-
-            <p>
-              Creación y aplicación de un lenguaje gráfico para la enseñanza
-              afectivo-sexual del alumnado con necesidades educativas
-              especiales.
-            </p>
-            <p class="project-description__credits">
-              Colaboración con la Asociación Sexualidad y Discapacidad. Más
-              tarde este proyecto se convertió en el programa
-              <a
-                href="https://www3.gobiernodecanarias.org/noticias/un-total-de-347-docentes-se-forma-en-el-marco-del-programa-needucasex/"
-                title="Leer más sobre el programa educativo NEEducaSEX"
-                >NEEducaSEX</a
-              >, impulsado por el Gobierno de Canarias.
-            </p>
 
             <picture>
               <source
@@ -171,7 +197,7 @@
               />
             </picture>
 
-            <p>
+            <p class="project-description__txt">
               La versión online del programa facilita la difusión de los
               contenidos y su consulta por parte del profesorado.
             </p>
@@ -232,7 +258,7 @@
               />
             </picture>
 
-            <p>
+            <p class="project-description__txt">
               Además de una guía de consulta para el profesorado, los alumnos
               disponen de un amplio conjunto de actividades: ilustraciones,
               puzles, fichas de personajes y escenarios...
@@ -330,7 +356,7 @@
               />
             </picture>
 
-            <p>
+            <p class="project-description__txt">
               Las actividades para los alumnos también tienen una versión para
               resolverlas online o descargar un PDF listo para imprimir.
             </p>
@@ -354,6 +380,7 @@
               href="#"
               class="button--close-project"
               title="Dejar de ver este trabajo"
+              id="diversidad-close"
               >Dejar de ver este trabajo</a
             >
           </div>
@@ -434,7 +461,7 @@
         </section>
       </section>
 
-      <section class="about-me">
+      <section class="about-me" id="about-me">
         <picture
           ><source
             media="(min-width:900px)"
@@ -459,16 +486,22 @@
         </div>
 
         <div class="about-me__contact-links">
-          <a href="mailto:raquelcastillejo@pm.me" class="about-me__email"
+          <a
+            class="link"
+            href="mailto:raquelcastillejo@pm.me"
+            class="about-me__email"
+            title="Envíame un correo"
             >raquelcastillejo@pm.me</a
           ><a
             href="https://github.com/raquel-castillejo"
-            class="about-me__github"
+            class="link about-me__github"
+            title="Visita mi perfil de github"
             >github</a
           >
           <a
             href="https://www.linkedin.com/in/raquel-castillejo-mendez"
-            class="about-me__linkedin"
+            class="link about-me__linkedin"
+            title="Visita mi perfil de LinkedIn"
             >linkedin</a
           >
         </div>

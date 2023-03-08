@@ -12,19 +12,19 @@
   --medium-blue: hsl(183, 100%, 36%);
   --strong--blue: hsl(194, 100%, 33%);
 
-  /* creciendo en la diversidad */
-  --bg-color-creciendo-en-la-diversidad: #cf3b5c;
-  --txt-color-creciendo-en-la-diversidad: #fff;
-
   /* --------------------------------------------- */
 
   /* colors applied */
   /* txt colors */
-  --txt-color-black: black;
-  --txt-color-white: white;
+  --txt-color-black: hsl(0, 0%, 17%);
+  --txt-color-white: hsl(0, 0%, 95%);
 
   /* bg colors */
   --bg-header: var(--light-blue);
+
+  /* creciendo en la diversidad */
+  --bg-color-creciendo-en-la-diversidad: #cf3b5c;
+  --txt-color-creciendo-en-la-diversidad: var(--txt-color-white);
 }
 
 * {
@@ -42,6 +42,9 @@ body {
   margin-right: auto;
 
   font-family: var(--body-font);
+  font-weight: 400;
+  letter-spacing: 0.1px;
+
   color: var(--txt-color-black);
   background-color: #fff;
 }
@@ -50,6 +53,7 @@ a {
   /* reset */
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
 
 ul {
@@ -64,10 +68,45 @@ img {
   display: block;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .section-title {
   text-transform: lowercase;
   font-size: 20px;
 }
+
+.link::after {
+  content: '';
+
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--txt-color-black);
+  opacity: 0.6;
+
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+}
+
+.link--white::after {
+  background-color: var(--txt-color-white);
+}
+
+/* para escritorio */
+
+/* 
+.link::after {
+  opacity: 0.6;
+  bottom: -1px;
+}
+
+.link:hover::after {
+  opacity: 1;
+  height: 3px;
+} */
 
 /* --------------------------------------------- */
 /* --------------------------------------------- */
@@ -81,7 +120,6 @@ img {
 
   height: 100vh;
   padding: 20px;
-  margin-bottom: 40px;
 
   /* para dar la ilusión de marco */
   background-image: linear-gradient(
@@ -95,7 +133,6 @@ img {
       var(--bg-header) 10px calc(100vw - 10px),
       #fff calc(100vw - 10px)
     );
-  border-bottom: 2px solid var(--medium-blue);
 }
 
 .header-top {
@@ -159,12 +196,16 @@ img {
 /* ************ */
 
 .my-work {
+  background-color: white;
+
   margin-bottom: 50px;
   padding: 10px;
+  border-top: 2px solid var(--medium-blue);
 }
 
 .section-title__my-work {
   margin-left: 10px;
+  margin-bottom: 40px;
 }
 
 .project-poster {
@@ -189,13 +230,17 @@ img {
 }
 */
 
+.hide {
+  display: none;
+}
+
 /* --------------------------------------------- */
 /* --------------------------------------------- */
 
 /* DEFINICIÓN DE LOS PROYECTOS */
 
 .project {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .project-header {
@@ -206,7 +251,6 @@ img {
   gap: 10px;
 
   margin-top: 30px;
-  margin-bottom: 60px;
 }
 
 .project-header__title,
@@ -216,12 +260,18 @@ img {
 
 .project-description__credits {
   opacity: 0.6;
+  padding: 0 10px 10px;
 }
 
 .project-description {
   margin-bottom: 20px;
 }
 
+.project-description__txt {
+  padding: 20px 10px 10px;
+}
+
+.project-header__img,
 .project-description__img {
   width: 100%;
   margin-bottom: 10px;
@@ -231,12 +281,13 @@ img {
   display: block;
   width: 15rem;
   text-align: center;
+  font-weight: 400;
 
-  /* ¿ no me funciona margin-left:auto; margin-right:auto; ? */
   margin: 0 auto;
   border-radius: 5px;
 
   margin-top: 30px;
+  margin-bottom: 10px;
   padding: 10px;
   background-color: var(--txt-color-creciendo-en-la-diversidad);
   color: var(--bg-color-creciendo-en-la-diversidad);
@@ -247,10 +298,12 @@ img {
 
 /* CRECIENDO EN LA DIVERSIDAD */
 
-.project--diversidad {
+.project-description--diversidad {
   position: relative;
   background-color: var(--bg-color-creciendo-en-la-diversidad);
   color: var(--txt-color-creciendo-en-la-diversidad);
+  font-weight: 300;
+  letter-spacing: 0.2px;
 
   width: calc(100% + 20px);
   left: -10px;
@@ -277,19 +330,20 @@ img {
       var(--bg-header) 10px calc(100vw - 10px),
       #fff calc(100vw - 10px)
     );
-  border-top: 1px solid var(--medium-blue);
+  border-top: 2px solid var(--medium-blue);
 }
 
 .about-me__img {
   height: 400px;
 
-  position: relative;
-  left: -30px;
-  top: 20px;
+  position: absolute;
+  left: -10px;
+  top: -40px;
 }
 
-.about-me__txt {
-  margin-bottom: 50px;
+.about-me__texts {
+  margin-top: 330px;
+  margin-bottom: 40px;
 }
 
 .about-me__contact-links {
@@ -297,4 +351,6 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+
+  margin-bottom: 5px;
 }
