@@ -302,7 +302,6 @@ p {
   position: relative;
   background-color: var(--bg-color-creciendo-en-la-diversidad);
   color: var(--txt-color-creciendo-en-la-diversidad);
-  font-weight: 300;
   letter-spacing: 0.2px;
 
   width: calc(100% + 20px);
