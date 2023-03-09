@@ -95,18 +95,18 @@ p {
   background-color: var(--txt-color-white);
 }
 
-/* para escritorio */
+@media screen and (min-width: 1400px) {
+  .link::after {
+    opacity: 0.6;
+    bottom: -1px;
+    transition: opacity 100ms 20ms ease-in, height 100ms 20ms ease-in;
+  }
 
-/* 
-.link::after {
-  opacity: 0.6;
-  bottom: -1px;
+  .link:hover::after {
+    opacity: 1;
+    height: 3px;
+  }
 }
-
-.link:hover::after {
-  opacity: 1;
-  height: 3px;
-} */
 
 /* --------------------------------------------- */
 /* --------------------------------------------- */
@@ -135,6 +135,18 @@ p {
     );
 }
 
+@media screen and (min-width: 1400px) {
+  .header {
+    height: 750px;
+    padding: 40px;
+    /* para dar la ilusión de marco */
+    background-image: linear-gradient(#fff 20px, transparent 20px),
+      linear-gradient(to top, #fff 20px, transparent 20px),
+      linear-gradient(to right, #fff 20px, transparent 20px),
+      linear-gradient(to left, #fff 20px, var(--bg-header) 20px);
+  }
+}
+
 .header-top {
   display: flex;
   flex-direction: row;
@@ -145,9 +157,22 @@ p {
   margin-top: 10px;
 }
 
+@media screen and (min-width: 1400px) {
+  .header-top {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
 .menu__list {
   display: flex;
   gap: 20px;
+}
+
+@media screen and (min-width: 1400px) {
+  .menu__list {
+    gap: 40px;
+  }
 }
 
 .logo {
@@ -164,10 +189,26 @@ p {
   bottom: 150px;
 }
 
+@media screen and (min-width: 1400px) {
+  .header__img {
+    height: 535px;
+    left: auto;
+    right: 150px;
+    bottom: 95px;
+  }
+}
+
 .header__texts {
   position: absolute;
-  width: calc(100% - 40px);
   bottom: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  .header__texts {
+    width: auto;
+    bottom: 80px;
+    left: 160px;
+  }
 }
 
 .header__pretitle,
@@ -180,9 +221,23 @@ p {
   font-size: 20px;
   margin-bottom: 5px;
 }
+@media screen and (min-width: 1400px) {
+  .header__pretitle {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+}
 
 .header__title {
   margin-top: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  .header__title {
+    margin-bottom: 0;
+    font-size: 64px;
+    max-width: 40rem;
+  }
 }
 
 .header__title--colored-text {
@@ -332,6 +387,18 @@ p {
   border-top: 2px solid var(--medium-blue);
 }
 
+@media screen and (min-width: 1400px) {
+  .about-me {
+    min-height: 620px;
+    padding: 40px 120px;
+    /* para dar la ilusión de marco */
+    background-image: linear-gradient(#fff 20px, transparent 20px),
+      linear-gradient(to top, #fff 20px, transparent 20px),
+      linear-gradient(to right, #fff 20px, transparent 20px),
+      linear-gradient(to left, #fff 20px, var(--bg-header) 20px);
+  }
+}
+
 .about-me__img {
   height: 400px;
 
@@ -340,16 +407,50 @@ p {
   top: -40px;
 }
 
+@media screen and (min-width: 1400px) {
+  .about-me__img {
+    height: 550px;
+
+    left: 40px;
+    top: 20px;
+  }
+}
+
 .about-me__texts {
   margin-top: 330px;
   margin-bottom: 40px;
 }
 
-.about-me__contact-links {
+@media screen and (min-width: 1400px) {
+  .about-me__texts {
+    margin-top: 0;
+    margin-bottom: 350px;
+    max-width: 30rem;
+
+    position: relative;
+    top: 50px;
+    left: 50%;
+  }
+}
+
+.about-me__contact-links,
+.about-me__contact-links-sm {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 
   margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1400px) {
+  .about-me__contact-links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-me__contact-links-sm {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
