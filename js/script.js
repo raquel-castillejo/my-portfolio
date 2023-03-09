@@ -1,5 +1,4 @@
 // La idea es que el código funcione con cualquier proyecto cuando todos tengan imágenes y descripción
-// Hay alguna forma de animar el mostrar y ocultar los elementos con js? Ahora hace un salto muy brusco al darle a los botones
 
 const showProject = projectClicked => {
   let whatProject = projectClicked.srcElement.id;
