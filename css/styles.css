@@ -23,8 +23,36 @@
   --bg-header: var(--light-blue);
 
   /* creciendo en la diversidad */
-  --bg-color-creciendo-en-la-diversidad: #cf3b5c;
+  --bg-color-creciendo-en-la-diversidad: hsl(347, 61%, 52%);
+  --bg-gradient-creciendo-en-la-diversidad: linear-gradient(
+    hsla(347, 63%, 57%, 0.75) 50%,
+    hsla(346, 90%, 40%, 0.75)
+  );
   --txt-color-creciendo-en-la-diversidad: var(--txt-color-white);
+
+  /* zaldiko */
+  --bg-color-zaldiko: hsl(4, 62%, 48%);
+  --bg-gradient-zaldiko: linear-gradient(
+    hsla(5, 70%, 59%, 0.75) 50%,
+    hsla(4, 55%, 37%, 0.75)
+  );
+  --txt-color-zaldiko: var(--txt-color-white);
+
+  /* infografía científica */
+  --bg-color-infografia-cientifica: hsl(0, 0, 0);
+  --bg-gradient-infografia-cientifica: linear-gradient(
+    hsla(0, 0%, 50%, 0.75) 50%,
+    hsla(0, 0%, 0%, 0.75)
+  );
+  --txt-color-infografia-cientifica: var(--txt-color-white);
+
+  /* invitaciones bodas de plata */
+  --bg-color-invitaciones-bodas: hsl(26, 100%, 20%);
+  --bg-gradient-invitaciones-bodas: linear-gradient(
+    hsla(27, 43%, 52%, 0.75) 50%,
+    hsla(11, 19%, 33%, 0.75)
+  );
+  --txt-color-invitaciones-bodas: var(--txt-color-white);
 }
 
 * {
@@ -258,9 +286,23 @@ p {
   border-top: 2px solid var(--medium-blue);
 }
 
+@media screen and (min-width: 1400px) {
+  .my-work {
+    padding: 20px;
+  }
+}
+
 .section-title__my-work {
   margin-left: 10px;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1400px) {
+  .section-title__my-work {
+    margin-left: 140px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
 }
 
 .project-poster {
@@ -276,17 +318,46 @@ p {
   margin-bottom: 10px;
 }
 
-/*
-.project-poster--hover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-*/
+@media screen and (min-width: 1400px) {
+  .project-poster__poster-img {
+    max-width: 1120px;
+    margin: 0 140px 20px;
+  }
 
-.hide {
-  display: none;
+  .project-poster--hover {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 140px 20px;
+
+    background-image: linear-gradient(
+      hsla(0, 0%, 30%, 0.6) 50%,
+      hsla(0, 0%, 0%, 0.6)
+    );
+    color: var(--txt-color-white);
+  }
+
+  .project-poster__title {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  .project-poster__project-type {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .project-poster__poster-img:hover {
+    cursor: pointer;
+  }
 }
 
 /* --------------------------------------------- */
@@ -298,7 +369,7 @@ p {
   margin-bottom: 10px;
 }
 
-.project-header {
+.project-header__texts {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,28 +379,84 @@ p {
   margin-top: 30px;
 }
 
+@media screen and (min-width: 1400px) {
+  .project-header__texts {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 140px 50px;
+  }
+}
+
 .project-header__title,
 .project-header__project-type {
   margin: 0;
 }
 
-.project-description__credits {
-  opacity: 0.6;
-  padding: 0 10px 10px;
+@media screen and (min-width: 1400px) {
+  .project-header__title {
+    font-size: 30px;
+  }
+
+  .project-header__project-type {
+    font-size: 14px;
+    font-weight: 300;
+  }
 }
 
 .project-description {
   margin-bottom: 20px;
 }
 
-.project-description__txt {
-  padding: 20px 10px 10px;
+.project-first-description__texts {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.project-description__credits {
+  opacity: 0.6;
 }
 
 .project-header__img,
 .project-description__img {
   width: 100%;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+  .project-first-description__texts {
+    padding: 50px;
+    gap: 70px;
+  }
+
+  .project-first-description__txt,
+  .project-description__credits {
+    max-width: 30rem;
+    margin: 0;
+  }
+
+  .project-description__txt {
+    /* margin-left: auto;
+    margin-right: auto; */
+    max-width: 30rem;
+    margin: 90px auto;
+  }
+
+  .two-col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .two-col--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .two-col__col {
+    width: 50%;
+  }
 }
 
 .button--close-project {
@@ -363,6 +490,33 @@ p {
   left: -10px;
 
   padding: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+  .project-description--diversidad {
+    width: calc(100% + 40px);
+    left: -20px;
+    padding: 20px;
+  }
+
+  .project-poster--hover-diversidad {
+    background-image: var(--bg-gradient-creciendo-en-la-diversidad);
+  }
+
+  /* colores del resto de proyectos */
+  .project-poster--hover-zaldiko {
+    background-image: var(--bg-gradient-zaldiko);
+  }
+  .project-poster--hover-infografia {
+    background-image: var(--bg-gradient-infografia-cientifica);
+  }
+  .project-poster--hover-invitaciones {
+    background-image: var(--bg-gradient-invitaciones-bodas);
+  }
+}
+
+.hide {
+  display: none;
 }
 
 /* --------------------------------------------- */

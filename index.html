@@ -67,7 +67,7 @@
 
         <section class="project project--diversidad">
           <div class="project-poster" id="diversidad-poster">
-            <div class="project-poster--hover">
+            <div class="project-poster--hover project-poster--hover-diversidad">
               <p class="project-poster__title">Creciendo en la diversidad</p>
               <p class="project-poster__project-type">
                 identidad gráfica - editorial - web
@@ -100,10 +100,14 @@
             id="diversidad-description"
           >
             <div class="project-header">
-              <h3 class="project-header__title">Creciendo en la diversidad</h3>
-              <p class="project-header__project-type">
-                identidad gráfica - editorial - web
-              </p>
+              <div class="project-header__texts">
+                <h3 class="project-header__title">
+                  Creciendo en la diversidad
+                </h3>
+                <p class="project-header__project-type">
+                  identidad gráfica - editorial - web
+                </p>
+              </div>
 
               <picture>
                 <source
@@ -126,40 +130,44 @@
               </picture>
             </div>
 
-            <p class="project-description__txt">
-              Creación y aplicación de un lenguaje gráfico para la enseñanza
-              afectivo-sexual del alumnado con necesidades educativas
-              especiales.
-            </p>
-            <p class="project-description__credits">
-              Colaboración con la Asociación Sexualidad y Discapacidad. Más
-              tarde este proyecto se convertió en el programa
-              <a
-                class="link link--white"
-                href="https://www3.gobiernodecanarias.org/noticias/un-total-de-347-docentes-se-forma-en-el-marco-del-programa-needucasex/"
-                title="Leer más sobre el programa educativo NEEducaSEX"
-                >NEEducaSEX</a
-              >, impulsado por el Gobierno de Canarias.
-            </p>
-            <picture>
-              <source
-                media="(min-width:900px)"
-                srcset="
-                  assets/images/desktop/creciendo-en-la-diversidad-guia-1.jpg
-                "
-              />
-              <source
-                media="(min-width:300px)"
-                srcset="
-                  assets/images/mobile/creciendo-en-la-diversidad-guia-1.jpg
-                "
-              />
-              <img
-                src="assets/images/mobile/creciendo-en-la-diversidad-guia-1.jpg"
-                alt="MockUp del proyecto Creciendo en la diversidad. Cuaderno del profesorado abierto."
-                class="project-description__img"
-              />
-            </picture>
+            <div class="two-col two-col--reverse">
+              <div class="project-first-description__texts two-col__col">
+                <p class="project-first-description__txt">
+                  Creación y aplicación de un lenguaje gráfico para la enseñanza
+                  afectivo-sexual del alumnado con necesidades educativas
+                  especiales.
+                </p>
+                <p class="project-description__credits">
+                  Colaboración con la Asociación Sexualidad y Discapacidad. Más
+                  tarde este proyecto se convertió en el programa
+                  <a
+                    class="link link--white"
+                    href="https://www3.gobiernodecanarias.org/noticias/un-total-de-347-docentes-se-forma-en-el-marco-del-programa-needucasex/"
+                    title="Leer más sobre el programa educativo NEEducaSEX"
+                    >NEEducaSEX</a
+                  >, impulsado por el Gobierno de Canarias.
+                </p>
+              </div>
+              <picture class="two-col__col">
+                <source
+                  media="(min-width:900px)"
+                  srcset="
+                    assets/images/desktop/creciendo-en-la-diversidad-guia-1.jpg
+                  "
+                />
+                <source
+                  media="(min-width:300px)"
+                  srcset="
+                    assets/images/mobile/creciendo-en-la-diversidad-guia-1.jpg
+                  "
+                />
+                <img
+                  src="assets/images/mobile/creciendo-en-la-diversidad-guia-1.jpg"
+                  alt="MockUp del proyecto Creciendo en la diversidad. Cuaderno del profesorado abierto."
+                  class="project-description__img"
+                />
+              </picture>
+            </div>
 
             <picture>
               <source
@@ -388,7 +396,7 @@
 
         <section class="project project--zaldiko">
           <div class="project-poster">
-            <div class="project-poster--hover">
+            <div class="project-poster--hover project-poster--hover-zaldiko">
               <p class="project-poster__title">Zaldiko</p>
               <p class="project-poster__project-type">identidad gráfica</p>
             </div>
@@ -412,7 +420,7 @@
 
         <section class="project project--infografia">
           <div class="project-poster">
-            <div class="project-poster--hover">
+            <div class="project-poster--hover project-poster--hover-infografia">
               <p class="project-poster__title">Infografía científica</p>
               <p class="project-poster__project-type">motion graphics</p>
             </div>
@@ -436,7 +444,9 @@
 
         <section class="project project--invitaciones">
           <div class="project-poster">
-            <div class="project-poster--hover">
+            <div
+              class="project-poster--hover project-poster--hover-invitaciones"
+            >
               <p class="project-poster__title">
                 Invitaciones para bodas de plata
               </p>
