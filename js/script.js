@@ -47,13 +47,15 @@ const showTitle = projectHovered => {
 
   // mostrar la descripción del proyecto con click
   projectPosterTitle.addEventListener('click', showDescription => {
-    projectPoster.classList.add('hide');
-    projectDescription.classList.remove('hide');
+    if (whatProject == 'diversidad') {
+      projectPoster.classList.add('hide');
+      projectDescription.classList.remove('hide');
 
-    closeProjectButton.addEventListener('click', () => {
-      projectPoster.classList.remove('hide');
-      projectDescription.classList.add('hide');
-    });
+      closeProjectButton.addEventListener('click', () => {
+        projectPoster.classList.remove('hide');
+        projectDescription.classList.add('hide');
+      });
+    }
   });
 };
 
@@ -66,17 +68,17 @@ document
   .addEventListener('click', showDescription);
 document.getElementById('diversidad').addEventListener('mouseover', showTitle);
 
-document.getElementById('zaldiko').addEventListener('click', showDescription);
+// document.getElementById('zaldiko').addEventListener('click', showDescription);
 document.getElementById('zaldiko').addEventListener('mouseover', showTitle);
 
-document
-  .getElementById('infografia')
-  .addEventListener('click', showDescription);
+// document
+//   .getElementById('infografia')
+//   .addEventListener('click', showDescription);
 document.getElementById('infografia').addEventListener('mouseover', showTitle);
 
-document
-  .getElementById('invitaciones')
-  .addEventListener('click', showDescription);
+// document
+//   .getElementById('invitaciones')
+//   .addEventListener('click', showDescription);
 document
   .getElementById('invitaciones')
   .addEventListener('mouseover', showTitle);
