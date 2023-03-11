@@ -1,7 +1,10 @@
 # Portfolio
 
-Work in Progress! </br>
-Todavía estoy trabajando en esta web así que de momento no hay imágenes de este trabajo.
+![Imagen del proyecto](https://github.com/raquel-castillejo/my-portfolio/blob/main/COVER.png)
+
+## Ejemplo en vivo
+
+- [URL de github pages de este proyecto](https://raquel-castillejo.github.io/my-portfolio/)
 
 ## Descripción 📑
 
@@ -9,7 +12,9 @@ El objetivo de esta práctica es hacer un portfolio utilizando todo lo aprendido
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
-Las ilustraciones están creadas con el repositorio de [https://designstripe.com/](https://designstripe.com/).
+En primer lugar, que CSS no permite animar la altura de un elemento (sin usar transform o scale, que para este caso no me valían). He intentado solucionarlo con max-height pero tampoco me satisfacía el resultado, así que (por el momento) el despliegue de los detalles de cada trabajo queda un poco brusco. </br>
+Para no tener problemas con el hover de desktop al hacer click en los proyectos, usé dos funciones distintas en JavaScript. (Seguramente hay una forma más limpia de evitar conflictos. Con mis conocimientos actuales, esta funciona bien.) </br>
+EL resto del ejercicio me ha servido como práctica para combinar HTML, CSS y JS en un sitio web. </br>
 
 ## Tecnologías 🛠
 
@@ -21,7 +26,10 @@ Las ilustraciones están creadas con el repositorio de [https://designstripe.com
 
 ## Vista previa del proyecto
 
-Puedes echarle un vistazo a los bocetos que he diseñado en Figma con [la versión escritorio](https://www.figma.com/proto/T6Y49ROlMh82nwp8fsWIPD/Portfolio?page-id=2%3A10&node-id=65%3A390&viewport=-2279%2C47%2C0.13&scaling=scale-down&starting-point-node-id=65%3A390&show-proto-sidebar=1) y la [versión móvil](https://www.figma.com/proto/T6Y49ROlMh82nwp8fsWIPD/Portfolio?page-id=2%3A10&node-id=79%3A23&viewport=-2218%2C249%2C0.13&scaling=min-zoom&starting-point-node-id=79%3A23&show-proto-sidebar=1).
+Si quieres echar un vistazo al proyecto, te recomiendo: </br>
+![Captura del proyecto](https://github.com/raquel-castillejo/my-portfolio/blob/main/VISTA-PREVIA.png)
+</br>
+Las ilustraciones del proyecto están creadas con el repositorio de [https://designstripe.com/](https://designstripe.com/).
 
 ## Autor ✒️
 
