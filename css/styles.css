@@ -425,7 +425,17 @@ p {
   margin-bottom: 10px;
 }
 
+.project-description__txt {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 @media screen and (min-width: 1400px) {
+  .project-header__img,
+  .project-description__img {
+    margin-bottom: 20px;
+  }
+
   .project-first-description__texts {
     padding: 50px;
     gap: 70px;
@@ -438,8 +448,6 @@ p {
   }
 
   .project-description__txt {
-    /* margin-left: auto;
-    margin-right: auto; */
     max-width: 30rem;
     margin: 90px auto;
   }
@@ -448,6 +456,8 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    column-gap: 20px;
+    align-items: center;
   }
 
   .two-col--reverse {
@@ -455,7 +465,11 @@ p {
   }
 
   .two-col__col {
-    width: 50%;
+    width: calc(50% - 10px);
+  }
+
+  .project-description__txt--fichas-alumnado {
+    order: 6;
   }
 }
 
