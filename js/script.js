@@ -1,13 +1,3 @@
-// variables
-// let whatProject;
-// let projectPoster;
-// let projectPosterTitle;
-// let projectDescription;
-// let closeProjectButton;
-
-// -------------------------------------------------------------------------
-// -------------------------------------------------------------------------
-
 // VERSIÓN PARA MÓVIL
 const showDescription = projectClicked => {
   // variables
