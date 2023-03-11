@@ -1,9 +1,9 @@
 // variables
-let whatProject;
-let projectPoster;
-let projectPosterTitle;
-let projectDescription;
-let closeProjectButton;
+// let whatProject;
+// let projectPoster;
+// let projectPosterTitle;
+// let projectDescription;
+// let closeProjectButton;
 
 // -------------------------------------------------------------------------
 // -------------------------------------------------------------------------
@@ -11,10 +11,12 @@ let closeProjectButton;
 // VERSIÓN PARA MÓVIL
 const showDescription = projectClicked => {
   // variables
-  whatProject = projectClicked.srcElement.id;
-  projectPoster = document.getElementById(whatProject + '-poster');
-  projectDescription = document.getElementById(whatProject + '-description');
-  closeProjectButton = document.getElementById(whatProject + '-close');
+  let whatProject = projectClicked.srcElement.id;
+  let projectPoster = document.getElementById(whatProject + '-poster');
+  let projectDescription = document.getElementById(
+    whatProject + '-description'
+  );
+  let closeProjectButton = document.getElementById(whatProject + '-close');
 
   // mostrar la descripción del proyecto con click
   projectPoster.classList.add('hide');
@@ -32,28 +34,32 @@ const showDescription = projectClicked => {
 // VERSIÓN PARA DESKTOP
 const showTitle = projectHovered => {
   // variables
-  whatProject = projectHovered.srcElement.id;
-  projectPoster = document.getElementById(whatProject + '-poster');
-  projectPosterTitle = document.getElementById(whatProject + '-title-hover');
-  projectDescription = document.getElementById(whatProject + '-description');
-  closeProjectButton = document.getElementById(whatProject + '-close');
+  let whatProjectD = projectHovered.srcElement.id;
+  let projectPosterD = document.getElementById(whatProjectD + '-poster');
+  let projectPosterTitleD = document.getElementById(
+    whatProjectD + '-title-hover'
+  );
+  let projectDescriptionD = document.getElementById(
+    whatProjectD + '-description'
+  );
+  let closeProjectButtonD = document.getElementById(whatProjectD + '-close');
 
   // mostrar el titulo del proyecto con hover
-  projectPosterTitle.classList.remove('hide');
+  projectPosterTitleD.classList.remove('hide');
 
-  projectPosterTitle.addEventListener('mouseout', hideTitle => {
-    projectPosterTitle.classList.add('hide');
+  projectPosterTitleD.addEventListener('mouseout', hideTitle => {
+    projectPosterTitleD.classList.add('hide');
   });
 
   // mostrar la descripción del proyecto con click
-  projectPosterTitle.addEventListener('click', showDescription => {
-    if (whatProject == 'diversidad') {
-      projectPoster.classList.add('hide');
-      projectDescription.classList.remove('hide');
+  projectPosterTitleD.addEventListener('click', e => {
+    if (whatProjectD == 'diversidad') {
+      projectPosterD.classList.add('hide');
+      projectDescriptionD.classList.remove('hide');
 
-      closeProjectButton.addEventListener('click', () => {
-        projectPoster.classList.remove('hide');
-        projectDescription.classList.add('hide');
+      closeProjectButtonD.addEventListener('click', () => {
+        projectPosterD.classList.remove('hide');
+        projectDescriptionD.classList.add('hide');
       });
     }
   });
