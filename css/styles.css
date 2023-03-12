@@ -208,8 +208,6 @@ p {
 }
 
 .header__img {
-  /*  📌 aumentar el tamaño de la imagen jpg. 
-      📌 a 400 px de alto al menos */
   height: 420px;
 
   position: absolute;
